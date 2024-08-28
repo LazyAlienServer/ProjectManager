@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "projectmanager",
+  "version": "${version}",
+  "name": "ProjectManager",
+  "description": "Manage Litematica projects",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/projectmanager/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "top.lazyalienserver.projectmanager.client.ProjectmanagerClient"
+    ],
+    "main": [
+      "top.lazyalienserver.projectmanager.Projectmanager"
+    ]
+  },
+  "mixins": [
+    "projectmanager.mixins.json",
+    {
+      "config": "projectmanager.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
