@@ -102,3 +102,6 @@ publishing {
     }
 }
 
+loom {
+    accessWidenerPath = file("src/main/resources/projectmanager.accesswidener")
+}

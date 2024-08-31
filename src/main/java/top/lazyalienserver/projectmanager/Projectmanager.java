@@ -5,10 +5,6 @@ import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import top.lazyalienserver.projectmanager.command.ProjectManager;
-import top.lazyalienserver.projectmanager.utils.ProjectListSave;
-
-import java.io.File;
-import java.io.IOException;
 
 
 public class Projectmanager implements ModInitializer {
